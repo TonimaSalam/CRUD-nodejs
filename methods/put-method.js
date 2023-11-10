@@ -2,6 +2,7 @@ const requestBodyParser = require("../util/body-parser");
 const users = require("../data/users.json");
 const writeToJSON = require("../util/write-to-json");
 const base_path = "/api/v1/users";
+/// put method
 
 module.exports = async (req,res) =>{
     const id = req.url.split("/").slice(-1)[0];
